@@ -10,12 +10,7 @@ const coupons = [
         name: 'greatDiscount',
         discount: 20
     }
-]
-
-function getDiscount(coupon) {
-    const discount = coupons.find(item => item.name.toUpperCase() == coupon.toUpperCase()).discount;
-    return discount;
-}
+];
 
 const isCouponValueValid = (coupon) => {
     const inputCoupon = document.getElementById('inputCoupon');
